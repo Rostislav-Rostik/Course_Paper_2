@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ContactUs.WebApi.Controllers.ContactUsController",
+    "Method": "ChangeUserSettings",
+    "RelativePath": "ContactUs/SendUsMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ContactUs.Application.Contracts.ChangeDTO.SendMessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

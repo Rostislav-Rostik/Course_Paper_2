@@ -1,0 +1,1 @@
+D:\C\Projects\CoffeeDay\src\WebUI\webui.client\obj\Debug\webui.client.esproj.CoreCompileInputs.cache

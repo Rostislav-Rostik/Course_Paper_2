@@ -1,0 +1,110 @@
+[
+  {
+    "ContainingType": "Users.WebApi.Controllers.UserController",
+    "Method": "ChangeUserSettings",
+    "RelativePath": "User/ChangeUserSettings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Users.Application.Contracts.ChangeDTOs.ChangeProfileInformationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Users.WebApi.Controllers.UserController",
+    "Method": "GetUserOrderDetails",
+    "RelativePath": "User/GetUserOrderDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Users.Application.Contracts.GetDTOs.GetUserOrderDetailsByIdDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Users.Application.Contracts.GetDTOs.GetUserOrderDetailsDTO, Users.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Users.WebApi.Controllers.UserController",
+    "Method": "GetUserOrders",
+    "RelativePath": "User/GetUserOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Users.Application.Contracts.GetDTOs.GetUserOrdersDTO, Users.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Users.WebApi.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "User/GetUserProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Users.Application.Contracts.SendDTOs.GetUserProfileDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Users.WebApi.Controllers.UserController",
+    "Method": "UploadProfilePhoto",
+    "RelativePath": "User/UploadProfilePhoto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Users.Application.Contracts.ChangeDTOs.ChangeProfilePhotoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Users.Application.Contracts.SendDTOs.GetUserProfileDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,275 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/ocelot/GetUserProfile",
+      "UpstreamhttpsMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "DownstreamPathTemplate": "/User/GetUserProfile",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/userUpdate",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "DownstreamPathTemplate": "/User/ChangeUserSettings",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetUserOrders",
+      "UpstreamhttpsMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "DownstreamPathTemplate": "/User/GetUserOrders",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+
+
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetUserOrderDetails",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "DownstreamPathTemplate": "/User/GetUserOrderDetails",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+
+    {
+      "UpstreamPathTemplate": "/ocelot/userProfilePhotoUpload",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "DownstreamPathTemplate": "/User/UploadProfilePhoto",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/contactUs",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7245
+        }
+      ],
+      "DownstreamPathTemplate": "/ContactUs/SendUsMessage",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetAllCategories",
+      "UpstreamhttpsMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/GetAllCategories",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetProductsByCategory",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/GetProductsByCategory",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetAllProducts",
+      "UpstreamhttpsMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/GetAllProducts",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/GetUserBag",
+      "UpstreamhttpsMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/GetUserBag",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/AddProductToTheBag",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/AddProductToTheBag",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/RemoveProductFromTheBag",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/RemoveProductFromTheBag",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/RemoveAllProductsFromTheBag",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/RemoveAllProductsFromTheBag",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/ocelot/PayOrder",
+      "UpstreamhttpsMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7161
+        }
+      ],
+      "DownstreamPathTemplate": "/Menu/PayOrder",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 2000
+      }
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000",
+    "QoSOptions": {
+      "ExceptionsAllowedBeforeBreaking": 5,
+      "DurationOfBreak": 10000,
+      "TimeoutValue": 2000
+    },
+    "CorsOptions": {
+      "policyName": "CorsPolicy",
+      "allowedOrigins": [ "*" ],
+      "allowedMethods": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "allowedHeaders": [ "*" ]
+    }
+  }
+}
